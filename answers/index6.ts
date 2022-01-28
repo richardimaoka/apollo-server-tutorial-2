@@ -17,7 +17,12 @@ const typeDefs = gql`
   }
 `;
 
-const books = [
+interface Book {
+  title: string
+  author: string
+}
+
+const books: Book[] = [
   {
     title: 'The Awakening',
     author: 'Kate Chopin',
@@ -45,7 +50,7 @@ const resolvers = {
     arrayOfInts(parent: any, args: any, context: any, info: any): number[] { 
       return [1,2,3,4,5];
     },
-    books(parent: any, args: any, context: any, info: any): Object[] { 
+    books(parent: any, args: any, context: any, info: any): Book[] { 
       return books;
     },
   }
