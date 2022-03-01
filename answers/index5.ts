@@ -19,37 +19,37 @@ const typeDefs = gql`
 
 const books = [
   {
-    title: 'The Awakening',
-    author: 'Kate Chopin',
+    title: "The Awakening",
+    author: "Kate Chopin",
   },
   {
-    title: 'City of Glass',
-    author: 'Paul Auster',
+    title: "City of Glass",
+    author: "Paul Auster",
   },
 ];
 
 const resolvers = {
   Query: {
-    hello(parent: any, args: any, context: any, info: any): string { 
+    hello(parent: any, args: any, context: any, info: any): string {
       return "hello universe!";
     },
-    booleanValue(parent: any, args: any, context: any, info: any): boolean { 
+    booleanValue(parent: any, args: any, context: any, info: any): boolean {
       return true;
     },
-    intValue(parent: any, args: any, context: any, info: any): number { 
+    intValue(parent: any, args: any, context: any, info: any): number {
       return 3;
     },
-    floatValue(parent: any, args: any, context: any, info: any): number { 
+    floatValue(parent: any, args: any, context: any, info: any): number {
       return 30.5;
     },
-    arrayOfInts(parent: any, args: any, context: any, info: any): number[] { 
-      return [1,2,3,4,5];
+    arrayOfInts(parent: any, args: any, context: any, info: any): number[] {
+      return [1, 2, 3, 4, 5];
     },
-    books(parent: any, args: any, context: any, info: any): Object[] { 
+    books(parent: any, args: any, context: any, info: any): Object[] {
       return books;
     },
-  }
-}
+  },
+};
 
 const server = new ApolloServer({ typeDefs, resolvers });
 
