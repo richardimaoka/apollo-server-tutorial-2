@@ -18,5 +18,5 @@ node と npm がインストール済みであることを確認して下さい�
 
 ```terminal: メイン (ターミナル)
 git clone https://github.com/richardimaoka/tutorial-apollo-server-resolver.git
-cd apollo-server-tutorial
+cd tutorial-apollo-server-resolver
 ```
