@@ -2,7 +2,7 @@
 
 # :large_orange_diamond: Action: **別のターミナルを立ち上げ**、以下のコマンドを実行してください
 
-# ```terminal: Apollo Server1 (ターミナル)
+# ```terminal: Apollo Server (ターミナル)
 npm run start
 # ```
 
