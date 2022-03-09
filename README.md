@@ -158,7 +158,7 @@ cp answers/index3.ts index.ts
 +    hello(parent: any, args: any, context: any, info: any): string {
 ```
 
-:white_check_mark: Result: ブラウザ上のApollo Studio Explorerでの動作は同じですが、
+:white_check_mark: Result: ブラウザ上のApollo Studio Explorerでの動作は同じです。
 
 <details><summary>:grey_question: 引数型が全部 <code>any</code> だけど、<code>any</code> じゃない型を指定した方がよいのでは？ </summary>
 
@@ -214,6 +214,8 @@ const resolvers = {
 
 :white_check_mark: Result: 以下のような画面が表示されます。
 
+![2022-03-09_23h57_07.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/75738/fc606a6d-21ac-2bfa-db1d-5a0f15afa9b5.png)
+
 ## Object型フィールドのResolverを実装
 
 :large_orange_diamond: Action: 以下のコマンドを実行してください
@@ -222,7 +224,7 @@ const resolvers = {
 cp answers/index5.ts index.ts
 ```
 
-:white_check_mark: Result: 以下のようにObject型であるBookと、そのResolver実装が挿入されます。
+:white_check_mark: Result: 以下のようにObject型であるBookと…
 
 ```ts
   type Book {
@@ -231,6 +233,24 @@ cp answers/index5.ts index.ts
   }
 ```
 
+…そのResolver実装が挿入されます。
+
+```ts
+const books = [
+  { title: "The Awakening", author: "Kate Chopin" },
+  { title: "City of Glass", author: "Paul Auster" },
+];
+
+const resolvers = {
+  Query: {
+  
+    ...  
+
+    books(parent: any, args: any, context: any, info: any): Object[] {
+      return books;
+    },
+};
+```
 :large_orange_diamond: Action: ブラウザのApollo Studio Explorerから以下のクエリを入力して"Run"ボタンを押してください
 
 ```
@@ -243,6 +263,8 @@ cp answers/index5.ts index.ts
 ```
 
 :white_check_mark: Result: 以下のような画面が表示されます。
+
+![2022-03-10_00h03_11.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/75738/0e342c67-76d7-be24-4124-7f5d5f70ee8c.png)
 
 ## GraphQLのBookに対応するTypeScript interfaceを定義
 
@@ -275,7 +297,7 @@ const resolvers = {
 
 :large_orange_diamond: Action: ブラウザのApollo Studio Explorerから、先程と同じ以下のクエリを入力して"Run"ボタンを押してください
 
-:white_check_mark: Result: 結果は同じです。
+:white_check_mark: Result: ブラウザ上のApollo Studio Explorerでの動作は同じです。
 ## まとめ
 
 このチュートリアルでは、ごく初歩的な Resolver を定義する方法を学びました。

@@ -16,7 +16,7 @@ cp answers/index3.ts index.ts
 # +    hello(parent: any, args: any, context: any, info: any): string {
 # ```
 
-# :white_check_mark: Result: ブラウザ上のApollo Studio Explorerでの動作は同じですが、
+# :white_check_mark: Result: ブラウザ上のApollo Studio Explorerでの動作は同じです。
 
 # <details><summary>:grey_question: 引数型が全部 <code>any</code> だけど、<code>any</code> じゃない型を指定した方がよいのでは？ </summary>
 

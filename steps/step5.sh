@@ -45,3 +45,5 @@ cp answers/index4.ts index.ts
 # ```
 
 # :white_check_mark: Result: 以下のような画面が表示されます。
+
+# ![2022-03-09_23h57_07.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/75738/fc606a6d-21ac-2bfa-db1d-5a0f15afa9b5.png)

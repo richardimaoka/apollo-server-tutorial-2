@@ -31,4 +31,4 @@ cp answers/index6.ts index.ts
 
 # :large_orange_diamond: Action: ブラウザのApollo Studio Explorerから、先程と同じ以下のクエリを入力して"Run"ボタンを押してください
 
-# :white_check_mark: Result: 結果は同じです。
+# :white_check_mark: Result: ブラウザ上のApollo Studio Explorerでの動作は同じです。
