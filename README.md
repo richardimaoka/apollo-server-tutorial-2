@@ -16,16 +16,18 @@ node と npm がインストール済みであることを確認して下さい�
 
 :large_orange_diamond: Action: ターミナルで以下の一連のコマンドを実行してください。
 
-```terminal: メイン (ターミナル)
+```terminal: メイン
 git clone https://github.com/richardimaoka/tutorial-apollo-server-resolver.git
 cd tutorial-apollo-server-resolver
 ```
+
+後ほど別のターミナルを立ち上げるので、このターミナルは `メイン` と表記します。
 
 ## 開発環境のセットアップ
 
 :large_orange_diamond: Action: 以下の一連のコマンドを実行してください
 
-```terminal: メイン (ターミナル)
+```terminal: メイン
 cp answers/package.json package.json
 npm install
 ```
@@ -35,7 +37,7 @@ npm install
 <div>
 :large_orange_diamond: Action: 以下のコマンドを実行してください
 
-```terminal: メイン (ターミナル)
+```terminal: メイン
 npx npm-check-updates
 ```
 
@@ -58,7 +60,7 @@ Run ncu -u to upgrade package.json
 
 :large_orange_diamond: Action: 上記メッセージの通り、以下のコマンドを実行してください
 
-```terminal: メイン (ターミナル)
+```terminal: メイン
 npx ncu -u
 ```
 
@@ -72,19 +74,19 @@ npx ncu -u
 
 :large_orange_diamond: Action: 以下のコマンドを実行してください
 
-```terminal: メイン (ターミナル)
+```terminal: メイン
 cp answers/index1.ts index.ts
 ```
 
 :large_orange_diamond: Action: **別のターミナルを立ち上げ**、以下のコマンドを実行してください
 
-```terminal: Apollo Server (ターミナル)
+```terminal: Apollo Server
 npm run start
 ```
 
 :white_check_mark: Result: 以下のように表示されます。
 
-```terminal: Apollo Server (ターミナル)
+```terminal: Apollo Server
 🚀  Server ready at http://localhost:4000/
 ```
 
@@ -118,7 +120,7 @@ nullが返ってくるのはResolverを実装していないからです。こ�
 
 :large_orange_diamond: Action: メインターミナルで以下のコマンドを実行してください
 
-```terminal: メイン (ターミナル)
+```terminal: メイン
 cp answers/index2.ts index.ts
 ```
 
@@ -144,7 +146,7 @@ const resolvers = {
 
 :large_orange_diamond: Action: 以下のコマンドを実行してください
 
-```terminal: メイン (ターミナル)
+```terminal: メイン
 cp answers/index3.ts index.ts
 ```
 
@@ -170,7 +172,7 @@ cp answers/index3.ts index.ts
 
 :large_orange_diamond: Action: 以下のコマンドを実行してください
 
-```terminal: メイン (ターミナル)
+```terminal: メイン
 cp answers/index4.ts index.ts
 ```
 
@@ -216,7 +218,7 @@ const resolvers = {
 
 :large_orange_diamond: Action: 以下のコマンドを実行してください
 
-```terminal: メイン (ターミナル)
+```terminal: メイン
 cp answers/index5.ts index.ts
 ```
 
@@ -246,7 +248,7 @@ cp answers/index5.ts index.ts
 
 :large_orange_diamond: Action: 以下のコマンドを実行してください
 
-```terminal: メイン (ターミナル)
+```terminal: メイン
 cp answers/index6.ts index.ts
 ```
 

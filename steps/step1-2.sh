@@ -5,7 +5,7 @@
 # <div>
 # :large_orange_diamond: Action: 以下のコマンドを実行してください
 
-# ```terminal: メイン (ターミナル)
+# ```terminal: メイン
 npx npm-check-updates
 # ```
 
@@ -28,7 +28,7 @@ npx npm-check-updates
 
 # :large_orange_diamond: Action: 上記メッセージの通り、以下のコマンドを実行してください
 
-# ```terminal: メイン (ターミナル)
+# ```terminal: メイン
 npx ncu -u
 # ```
 

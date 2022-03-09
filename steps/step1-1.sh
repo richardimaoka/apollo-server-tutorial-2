@@ -4,7 +4,7 @@
 
 # :large_orange_diamond: Action: 以下の一連のコマンドを実行してください
 
-# ```terminal: メイン (ターミナル)
+# ```terminal: メイン
 cp answers/package.json package.json
 npm install
 # ```

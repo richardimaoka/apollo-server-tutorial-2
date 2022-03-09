@@ -16,7 +16,9 @@ node と npm がインストール済みであることを確認して下さい�
 
 :large_orange_diamond: Action: ターミナルで以下の一連のコマンドを実行してください。
 
-```terminal: メイン (ターミナル)
+```terminal: メイン
 git clone https://github.com/richardimaoka/tutorial-apollo-server-resolver.git
 cd tutorial-apollo-server-resolver
 ```
+
+後ほど別のターミナルを立ち上げるので、このターミナルは `メイン` と表記します。

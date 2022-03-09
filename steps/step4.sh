@@ -4,7 +4,7 @@
 
 # :large_orange_diamond: Action: 以下のコマンドを実行してください
 
-# ```terminal: メイン (ターミナル)
+# ```terminal: メイン
 cp answers/index3.ts index.ts
 # ```
 

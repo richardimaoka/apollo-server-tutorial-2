@@ -2,13 +2,13 @@
 
 # :large_orange_diamond: Action: **別のターミナルを立ち上げ**、以下のコマンドを実行してください
 
-# ```terminal: Apollo Server (ターミナル)
+# ```terminal: Apollo Server
 npm run start
 # ```
 
 # :white_check_mark: Result: 以下のように表示されます。
 
-# ```terminal: Apollo Server (ターミナル)
+# ```terminal: Apollo Server
 # 🚀  Server ready at http://localhost:4000/
 # ```
 
